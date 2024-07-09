@@ -1,7 +1,6 @@
 import React from 'react';
 
 const PlayerAchievements = ({ playerAchievements, allAchievements }) => {
-    console.log(allAchievements);
     return (
         <div className='bg-gray-300 p-5 rounded'>
             {Object.keys(playerAchievements).map((achievementId) => (

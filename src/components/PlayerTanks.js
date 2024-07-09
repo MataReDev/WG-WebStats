@@ -12,7 +12,6 @@ const PlayerTanksComponent = ({ playerTanks }) => {
                 const tankIds = Object.keys(playerTanks).flatMap(tankId => playerTanks[tankId].map(tank => tank.tank_id));
                 const tankDetailsData = {};
 
-                // Fetch tank details for each tankId
                 for (const tankId of tankIds) {
                     const response = await fetch(`https://api.worldoftanks.eu/wot/encyclopedia/vehicles/?application_id=ee1c1ba95ae2d7842580a3535c9c64e0&tank_id=${tankId}`);
                     const data = await response.json();

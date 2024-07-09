@@ -29,9 +29,9 @@ const Main = () => {
     };
     return (
         <div className="flex flex-col items-center">
-            <form onSubmit={handleSubmit} className="m-4">
-                <input type="text" placeholder="Entrez votre pseudo" value={searchValue} onChange={handleSearchChange} className="border p-2 mb-2" />
-                <button type="submit" className="bg-blue-500 text-white p-2">Valider</button>
+            <form onSubmit={handleSubmit} className="m-4 space-x-2">
+                <input type="text" placeholder="Entrez votre pseudo" value={searchValue} onChange={handleSearchChange} className="border p-2 mb-2 border-yellow-800 rounded" />
+                <button type="submit" className="bg-yellow-800 text-white p-2 rounded">Valider</button>
             </form>
             <PlayerList players={players} />
             </div>

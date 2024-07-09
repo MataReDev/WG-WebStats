@@ -27,7 +27,7 @@ const PlayerList = ({ players }) => {
                         onClick={() => handlePlayerClick(player)}
                     />
                     {selectedPlayerId === player.account_id && playerDetails && (
-                        <div className="player-details bg-gray-100 p-4 mt-2 rounded-lg">
+                        <div className="player-details bg-yellow-100 p-4 mt-2 rounded-lg">
                             <h3>Details for {playerDetails.nickname}</h3>
                             <p>ID: {playerDetails.account_id}</p>
                             <p>Global Rating: {playerDetails.global_rating}</p>
@@ -39,7 +39,7 @@ const PlayerList = ({ players }) => {
                             <p>Wins: {playerDetails.statistics.all.wins}</p>
                             <p>Losses: {playerDetails.statistics.all.losses}</p>
                             {/* Ajoutez ici d'autres détails pertinents */}
-                            <Link to={`/player/${player.account_id}`} className="btn btn-primary bg-blue-500 text-white rounded-lg px-4 py-2 block mx-auto mt-4">Plus de détails</Link>
+                            <Link to={`/player/${player.account_id}`} className="btn btn-primary bg-yellow-800 text-white rounded-lg px-4 py-2 block mx-auto mt-4">Plus de détails</Link>
                         </div>
                     )}
                 </div>

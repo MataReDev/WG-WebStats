@@ -35,8 +35,8 @@ const PlayerPage = () => {
         fetchData();
     }, [account_id]);
     return (
-        <div className="container mx-auto">
-            <h1 className="text-2xl font-bold m-4">Player : {playerName}</h1>
+        <div className="container mx-auto p-4">
+            <h1 className="text-2xl font-bold m-4 text-yellow-800">Player : {playerName}</h1>
             {playerStats && (
                 <div>
                     <h2 className="text-xl font-bold m-4">Stats</h2>

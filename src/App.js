@@ -7,8 +7,8 @@ import Header from './components/Header';
 function App() {
     return (
         <div>
-            <Header />
-            <Router>
+            <Router basename="/">
+                <Header />
                 <Routes>
                     <Route exact path="/" element={<MainPage />} />
                     <Route path="/player/:account_id" element={<PlayerPage />} />
